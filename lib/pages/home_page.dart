@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.todoList[index][1] = !db.todoList[index][1];
     });
-    db.updateDatabse();
+    db.updateDatabase();
   }
 
   // Initialize controller
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
       db.todoList.add([_controller.text, false]);
       _controller.clear();
     });
-    db.updateDatabse();
+    db.updateDatabase();
     Get.back();
   }
 
@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.todoList.removeAt(index);
     });
-    db.updateDatabse();
+    db.updateDatabase();
   }
 
   @override
